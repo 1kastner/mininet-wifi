@@ -46,6 +46,7 @@ class sumo(object):
                       '--remote-port %s &' % (sumoBinary, sumoConfig,
                                               clients, port))
             trace.init(port)
+            trace.setOrder(0)
 
         step = 0
         speed = []
